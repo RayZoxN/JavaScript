@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <script>
+        let N1 = Number(prompt('Escribe tu numero 1:'));
+        let N2 = Number(prompt('Escribe tu numero 2:'));
+        let Opcion = String(prompt('Escribe la operacion que quieras 1:Suma 2:Resta 3:Multiplicacion 4:Division'));
+        switch(Opcion){
+            case '1':
+                Resultado = N1 + N2;
+                document.write("Suma: " + Resultado);
+                break;
+            case '2':
+                Resultado = N1 - N2;
+                document.write("Resta: " + Resultado);
+                break;
+            case '3':
+                Resultado = N1 * N2;
+                document.write("Multiplicacion: " + Resultado);
+                break;
+            case '4':
+                Resultado = N1 / N2;
+                document.write("Division: " + Resultado);
+                break;
+            default:
+                document.write("Opcion Invalida");
+                break;    
+        }
+    </script>
+</body>
+</html>

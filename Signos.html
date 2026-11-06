@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Signo con Prompt</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+
+    <h2>Descubre tu signo zodiacal</h2>
+    <script>
+            let mes = prompt("Escribe tu mes de nacimiento (ejemplo: marzo):");
+            let dia = prompt("Escribe tu día de nacimiento (ejemplo: 15):");
+            let signo = "";
+            switch (mes.toLowerCase()) {
+                case "enero":
+                    if (dia <= 19) { signo = "Capricornio"; } else { signo = "Acuario"; }
+                    break;
+                case "febrero":
+                    if (dia <= 18) { signo = "Acuario"; } else { signo = "Piscis"; }
+                    break;
+                case "marzo":
+                    if (dia <= 20) { signo = "Piscis"; } else { signo = "Aries"; }
+                    break;
+                case "abril":
+                    if (dia <= 19) { signo = "Aries"; } else { signo = "Tauro"; }
+                    break;
+                case "mayo":
+                    if (dia <= 20) { signo = "Tauro"; } else { signo = "Géminis"; }
+                    break;
+                case "junio":
+                    if (dia <= 20) { signo = "Géminis"; } else { signo = "Cáncer"; }
+                    break;
+                case "julio":
+                    if (dia <= 22) { signo = "Cáncer"; } else { signo = "Leo"; }
+                    break;
+                case "agosto":
+                    if (dia <= 22) { signo = "Leo"; } else { signo = "Virgo"; }
+                    break;
+                case "septiembre":
+                    if (dia <= 22) { signo = "Virgo"; } else { signo = "Libra"; }
+                    break;
+                case "octubre":
+                    if (dia <= 22) { signo = "Libra"; } else { signo = "Escorpio"; }
+                    break;
+                case "noviembre":
+                    if (dia <= 21) { signo = "Escorpio"; } else { signo = "Sagitario"; }
+                    break;
+                case "diciembre":
+                    if (dia <= 21) { signo = "Sagitario"; } else { signo = "Capricornio"; }
+                    break;
+                default:
+                    signo = "Mes incorrecto";
+            }
+            alert("Tu signo zodiacal es: " + signo);
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Promedio</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <h2>Evaluación de Promedio</h2>
+    <script>
+        let mate = parseFloat(prompt("Escribe tu calificación de Matemáticas:"));
+        let ciencias = parseFloat(prompt("Escribe tu calificación de Ciencias:"));
+        let historia = parseFloat(prompt("Escribe tu calificación de Historia:"));
+        let promedio = (mate + ciencias + historia) / 3;
+        if (promedio >= 6) {
+            alert("Tu promedio es " + promedio + ". ¡Felicidades, aprobaste!");
+        }
+        else {
+            let materiaMasBaja = "matematicas";
+            let calificacionMinima = mate;
+            if (ciencias < calificacionMinima) {
+                calificacionMinima = ciencias;
+                materiaMasBaja = "ciencias";
+            }
+            if (historia < calificacionMinima) {
+                calificacionMinima = historia;
+                materiaMasBaja = "historia";
+            }
+            let recomendacion = "";
+            switch (materiaMasBaja) {
+                case "matematicas":
+                    recomendacion = "Repasa suma de fracciones y álgebra básica.";
+                    break;
+                case "ciencias":
+                    recomendacion = "Vuelve a leer el ciclo del agua y las células.";
+                    break;
+                case "historia":
+                    recomendacion = "Haz una línea de tiempo con las fechas importantes.";
+                    break;
+            }
+            alert("Tu promedio es " + promedio + "\nReprobaste. \n\nRecomendación para " + materiaMasBaja + ":\n" + recomendacion);
+        }
+    </script>
+
+</body>
+</html>

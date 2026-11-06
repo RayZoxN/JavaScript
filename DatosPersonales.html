@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <h1>Confirm</h1>
+    <script>
+        let Continuar = confirm("Desea agregar datos");
+        if(Continuar){
+        let nombre = String(prompt("Ingresa tu nombre: "));
+        let Edad = Number(prompt("Ingresa tu Edad: "));
+        let Especialidad = String(prompt("Ingresa tu especialidad: "));
+        let Correo = String(prompt("Ingresa tu correo: "));
+        document.write("Tu nombre es: " + nombre);
+        document.write("Tu Edad es: " + Edad);
+        document.write("Tu Especialidad: " + Especialidad);
+        document.write("Tu Correo es: " + Correo);
+        }
+        else{
+            alert("Tengo Flojera");
+        }
+    </script>
+</body>
+</html>

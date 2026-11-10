@@ -1,0 +1,107 @@
+:root {
+    --cafe-oscuro: #3e2415;
+    --cafe: #6f4e37;
+    --latte: #e6ccb2;
+    --crema: #f7efe5;
+}
+ 
+body {
+    background-color: var(--crema);
+    color: var(--cafe-oscuro);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+.barra-superior {
+    background-color: #2b1810;
+    color: #fffaf3;
+}
+ 
+.barra-superior .navbar-brand {
+    color: #fffaf3;
+}
+ 
+h1 {
+    text-align: center;
+    margin: 40px 0 8px;
+    font-size: 2rem;
+}
+ 
+.subtitulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--cafe);
+}
+ 
+/* Filtros */
+.nav-pills .nav-link {
+    color: var(--cafe);
+    border: 1px solid var(--cafe);
+    margin: 0 4px 8px;
+    border-radius: 50rem;
+}
+ 
+.nav-pills .nav-link.active {
+    background-color: var(--cafe);
+    color: #fffaf3;
+}
+ 
+/* Botones del menu */
+.menu-lista .btn-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 12px 18px;
+    text-align: left;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--tono);
+    color: var(--texto-tono);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+ 
+.menu-lista .btn-item:hover {
+    transform: translateX(6px);
+}
+ 
+.menu-lista .btn-item:focus {
+    box-shadow: 0 0 0 3px rgba(111, 78, 55, 0.4);
+}
+ 
+.menu-lista .btn-item.seleccionado {
+    transform: translateX(12px);
+    box-shadow: 0 4px 12px rgba(62, 36, 21, 0.35);
+    font-weight: bold;
+}
+ 
+.btn-item small {
+    display: block;
+    opacity: 0.8;
+}
+ 
+/* Panel de detalle */
+.panel {
+    border: none;
+    border-radius: 8px;
+    background-color: var(--tono);
+    color: var(--texto-tono);
+    box-shadow: 0 6px 18px rgba(62, 36, 21, 0.3);
+    transition: background-color 0.4s, color 0.4s;
+}
+ 
+.panel .btn-abrir {
+    background-color: var(--texto-tono);
+    color: var(--tono);
+    border: none;
+    font-weight: bold;
+}
+ 
+.panel .btn-abrir:hover {
+    opacity: 0.9;
+}
+ 
+@media (min-width: 768px) {
+    .panel {
+        position: sticky;
+        top: 20px;
+    }
+}

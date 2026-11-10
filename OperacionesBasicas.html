@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="EstilosNavegacion.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar barra-superior sticky-top">
+        <span class="navbar-brand mb-0">Paginas Semestre</span>
+        <a class="btn btn-regresar" href="index.html">Regresar</a>
+    </nav>
+    
+    <script>
+        let Numero1 = Number(prompt("Ingresa Numero 1:"));
+        let Numero2 = Number(prompt("Ingresa Numero 2:"));
+        let Opcion = Number(prompt("1.Suma 2.Resta 3.Multiplicacion 4.Division"));
+        switch(Opcion){
+            case 1:
+               Resultado = Numero1 + Numero2;
+               document.write("Resultado: " + Resultado);
+               break;
+            case 2:
+                Resultado = Numero1 - Numero2;
+                document.write("Resultado: " + Resultado)
+                break;
+            case 3:
+                Resultado = Numero1 * Numero2;
+                document.write("Resultado: " + Resultado);
+                break;
+            case 4:
+                Resultado = Numero1 / Numero2;
+                document.write("Resultado: " + Resultado);
+                break;
+            default:
+                document.write("Opcion invalida");
+        }
+    </script>
+</body>
+</html>

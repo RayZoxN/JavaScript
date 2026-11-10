@@ -1,0 +1,39 @@
+/* Fondo de un solo color */
+body {
+    background-color: #e4cdb4;
+    color: #3e2415;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Barra de navegacion: color propio, borde inferior y sombra para separarla del contenido */
+.barra-superior {
+    background-color: #7b4a2d;
+    border-bottom: 5px solid #c68b59;
+    box-shadow: 0 8px 18px rgba(43, 24, 16, 0.45);
+    padding: 14px 24px;
+    margin-bottom: 40px;
+}
+
+.barra-superior .navbar-brand {
+    color: #fffaf3;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Boton de regreso */
+.btn-regresar {
+    background-color: #f3e5d4;
+    color: #3e2415;
+    border: none;
+    border-radius: 50rem;
+    padding: 6px 20px;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-regresar:hover {
+    background-color: #fffaf3;
+    color: #3e2415;
+    text-decoration: none;
+    transform: translateX(-4px);
+}

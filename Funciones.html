@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="EstilosNavegacion.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar barra-superior sticky-top">
+        <span class="navbar-brand mb-0">Paginas Semestre</span>
+        <a class="btn btn-regresar" href="index.html">Menu Actividades</a>
+        <a class="btn btn-regresar" href="Metodos.html">Menu Metodos</a>
+    </nav>
+
+    <script>
+        
+        function mensaje(){
+            document.write("Van a pasar con 10 el examen \n");
+        }
+        mensaje();
+
+        function cafecito(){
+            document.write("\n Voy a disfrutar un cafecito ");
+        }
+        cafecito();
+
+        function saludo(nombre){
+            alert("bendecido dia " + nombre);
+        }
+        saludo("Miguel")
+
+        function saludar(nombre){
+            alert("Hola, " + nombre);
+        }
+        saludar("Maria");
+        saludar("Victoria");
+
+        function sumar (a, b){
+            return a + b;
+        }
+
+        let resultado = sumar(5, 3);
+        alert(resultado);
+        resultado = sumar(100, 200);
+        alert(resultado);
+        
+    </script>
+</body>
+</html>
